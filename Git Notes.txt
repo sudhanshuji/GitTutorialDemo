@@ -47,6 +47,29 @@ Staging Area -->
 
 Git Directory --> 
 
+Upto this , this is my version 1.0
+
+Git commands
+
+
+git status -->
+
+git init -->
+
+git add -->
+
+git add -aa -->
+
+
+git commit -->
+
+git commit -m"message" -->
+
+upto this this is my version 1.1
+
+
+
+
 
 
 
