@@ -52,20 +52,226 @@ Upto this , this is my version 1.0
 Git commands
 
 
-git status -->
+git status --> This command is used to track the status of the file
 
-git init -->
+git init --> This command is used to make the .git repositery folder.
 
-git add -->
+git add --> changes get staged.
 
-git add -aa -->
+git add --a --> All the changes get staged
 
 
-git commit -->
+git commit --> This command is used to push the final Code.
 
-git commit -m"message" -->
+git commit -m"message" --> This command is used to push the final Code along with a message.
+
+git log - This command is used to track the change history.
 
 upto this this is my version 1.1
+
+
+
+
+
+File status Life Cycle -:
+----------------------------
+
+Repository --> A Collection of files and folders where something is stored in large quantity.
+
+.git folder -->This folder is tracked by git. It contains the whole information of version control. 
+
+Untracked --> When we give the command "git init" then this stage comes. In this stage .git folder is made but files are not getting tracked.
+
+Unmodified -->when we give the command "git add" then this stage comes. In this stage files are getting tracked but they are in their original form (for the first time).
+
+Modified --> When we edit something in our file and the give the command "git add" then this stage comes. In this stage whatever the changes that we made is tracked.
+
+Staged --> When we finally want to add the modified file to the repository then we again give the command "git add --a" then this stage comes (before commit). After this stage "git commit command is given.
+
+
+			ADD THE FILE   					EDIT THE FILE 						Stage the file
+Untracked--------------------> unmodified-------------------------> modified --------------------------> staged
+									/\																		||
+									||																		||
+									||																		||
+									||																		||
+									||															            ||
+									||															            ||
+									||															            ||
+									||						commit									        ||
+									||<---------------------------------------------------------------------\/	
+									\/
+									
+									
+git ignore --> If we want to ignore some file then we will have to put the file name in a saperate file with the name .gitignore.
+
+git diff --> If we want to see the differences between staged file and modified file then we use this command.
+
+git diff --staged --> If we want to see the diferences between previously commited code to that of staging area.
+
+
+
+Skipping the staging area -: git commit -a -m"custom message"
+---------------------------
+
+
+Moving and removing files in git -: 
+
+git rm fileName --> to remove the file
+
+git mv filename filenewname --> to rename the file
+
+git rm --cached filename --> It will untrack the file if it is being tracked.
+
+
+
+
+Viewing and changing commits in git-:
+---------------------------------------
+
+git log -p --> is used to get the differences along with the commit records
+
+git log -p -numberOfCommits --> is used to get the differences upto defined number of commits.
+
+git log --stat --> It gives a brief information about previous commits as well as the differences.
+
+git log --pretty --> It gives the commit information in brief(just shows the author, date and commit message).
+
+git log --pretty=oneline --> It gives the commit information in one line(just shows the commitid commit message).
+
+git log --pretty=short --> It gives the commit information in one line(just shows the commitid, author, commit message).
+
+git log --pretty=full --> It gives the commit information in one line(just shows the commitd, author, commit message).
+
+git log --since=2.days --> it gives the log for previous number of days (two) days.
+
+git log --since=2.months --> it gives the log for previous number of months (two) days.
+
+git log --since=2.years --> it gives the log for previous number of years (two) days.
+
+git log --pretty=format"%h -- %an" --> It gives the log information by formating them in the given format.
+
+git log --amend --> This is used to edit the previous commit.
+
+
+
+Unstaging and unmodifying files in git-:
+--------------------------------------------
+
+git restore --staged <file> --> This is used to unstage the file.
+
+git checkout -- <file name> --> This is used to get the modified file into the previous commit stage.
+
+git checkout -f --> if we want to go to our previous commit status by ignoring the latest changes then this command is used.
+
+
+Working with remote repository -:
+-------------------------------------
+
+git remote add <name> Origin <website>https://github.com/sudhanshuji/GitTutorialDemo.git --> This command is used to map the local repository to the central repository.
+
+git remote -->
+
+git remote -v -->  
+
+git push -u origin master --> 
+
+
+Setting alias in git-: git config --global alias.st status --> here st is alliased for status now we can run git st instead of git status.
+
+
+creating and switching branches in Git-:
+-----------------------------------------
+
+
+
+git checkout -b develop --> to crate a new branch with the name develop
+
+git checkout master --> to switch to master branch
+
+git checkout develop --> to switch to develop branch
+
+git branch --> gives a list of branches
+
+git merge <filename>trycleanup --> merges the given file to the main file.
+
+Resolving Merge Conflicts-:
+------------------------------
+
+note - git always saves the changes only not the whole folder again and again.
+
+git branch -v --> It gives us the information about last commit of each branch.
+
+git branch --merged --> It gives us the information about  all the already merged branches.
+
+git branch --no-merged -->  It gives us the information about  all the already merged branches.
+
+
+Deleting branches -:  git branch -d <branchname> develop -->   It will give error of branch is not merged, even then if we want to delete the brnch then we should use capital 'D' intead of small 'd' (git branch -d <branchname> develop).
+
+Branching workflow -:
+----------------------
+
+Long Running branches --> It remains till whole developent project.
+
+	--> Master 
+	--> developed
+	--> proposed update
+
+Topic Branches --> It remains forshort time just for developing the functionality or solving the issue.
+
+	--> Replaced text with type.js
+
+pushing git branches to remote repositery-:
+----------------------------------------------
+git status
+
+git log
+
+
+git branch
+
+git checkout -b bugfix
+
+
+modify in new branch
+
+stage
+
+commit
+
+go to master
+
+git remote -v
+
+
+conect to remote repository by providing the url
+
+
+push the code --> git push -u origin master
+
+
+to push the branch to the remote repository-:
+
+	--> go to that branch by git checkout <brnachname>
+	--> use command git push <originname> origin <branchname> trycleanup
+	
+	
+to delete the branch from the repository --> git push -d <masterfilename>origin <branchname>trycleanup. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

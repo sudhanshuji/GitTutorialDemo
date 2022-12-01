@@ -1,0 +1,77 @@
+Issue -: Issues are discussion threads where people can report bugs, request features or even just ask questions.
+
+Pull Requests -: Pull requests let you show others the change you are proposing. So that they can review and discuss them.
+
+On Github every one has a copy of the project. SO if anyone having any idea for something more better idea, It can be added to a saperate branch .
+
+Github keeps a record of everyone contribution and feedback.
+
+Once the new feature is developed it is deployed to the main branch and now the new feature is available to everyone.
+
+Branch -: An alternate timeline where changes can be made without effecting the working of already running codes.
+
+Git -:
+
+Git is a version control system
+	-> easily recover falls
+	-> who introduced an issue and why
+	-> Rollback to previously working state
+	
+History of Version Control System-:
+
+Local Version Control System -> keep track of file in your local machine
+	
+	Pros -> Can track files and rollback.
+	
+	Cons -> If HardDisk is lost then everything gone.
+	
+Centralized Version Control System -> A central server is maintained from where everyone pulls the code and push it there after changes.
+
+Distributed version control system -> A central server is maintained from where an individual copy(A mirror of original repository) is provided to each members of the team.
+
+Features of Git-:
+
+	-> It captures the snapshot not the differences.
+	
+	-> Almost every operation is local.
+	
+	-> Git has Integrity.(It calculates the checksum of each file and when anything is changed inside the originual file then checksum of the modified file is changed.)
+	
+
+Git Three Stage Architecture-:
+----------------------------------
+
+Working Directory --> 
+
+Staging Area -->
+
+Git Directory --> 
+
+Upto this , this is my version 1.0
+
+Git commands
+
+
+git status -->
+
+git init -->
+
+git add -->
+
+git add -aa -->
+
+
+git commit -->
+
+git commit -m"message" -->
+
+upto this this is my version 1.1
+
+
+
+
+
+
+
+ 
+	
